@@ -1,0 +1,37 @@
+# ==============================
+# GROMACS simulation outputs
+# ==============================
+
+*.xtc
+*.trr
+*.tpr
+*.cpt
+*.edr
+
+# ==============================
+# Temporary / backup files
+# ==============================
+
+*#
+*.backup
+*.bak
+
+# ==============================
+# Generated logs and temporary outputs
+# ==============================
+
+# Keep selected logs explicitly with git add -f if needed
+*.log
+
+# ==============================
+# Python cache
+# ==============================
+
+__pycache__/
+*.pyc
+
+# ==============================
+# Analysis-generated temporary files
+# ==============================
+
+*.xvg
