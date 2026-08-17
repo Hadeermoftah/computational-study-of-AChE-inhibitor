@@ -18,9 +18,9 @@
 ;
 
 ; Include forcefield parameters
-#include "./charmm36.ff/forcefield.itp"
+#include "../charmm36.ff/forcefield.itp"
 ; Include ligand bonded parameters
-#include "./charmm36.ff/6f__ffbonded.itp"
+#include "../charmm36.ff/6f__ffbonded.itp"
 [ moleculetype ]
 ; Name            nrexcl
 Protein_chain_A     3
@@ -77465,7 +77465,7 @@ Protein_chain_A     3
 ; Include ligand topology
 #include "6f.itp"
 ; Include water topology
-#include "./charmm36.ff/tip3p.itp"
+#include "../charmm36.ff/tip3p.itp"
 
 #ifdef POSRES_WATER
 ; Position restraint for each water oxygen
@@ -77475,7 +77475,7 @@ Protein_chain_A     3
 #endif
 
 ; Include topology for ions
-#include "./charmm36.ff/ions.itp"
+#include "../charmm36.ff/ions.itp"
 
 [ system ]
 ; Name

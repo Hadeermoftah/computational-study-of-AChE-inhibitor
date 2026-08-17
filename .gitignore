@@ -35,3 +35,34 @@ __pycache__/
 # ==============================
 
 *.xvg
+
+# ==============================
+# Local organization / archives
+# ==============================
+backups/
+run_outputs/
+analysis/diagnostics/
+
+# ==============================
+# Force-field distributions / generated parameterization
+# ==============================
+charmm36.ff/
+forcefield/reference/
+forcefield/ligand_parameterization/
+
+# ==============================
+# Current production runtime files
+# ==============================
+production.*
+md.tpr
+
+# Large generated system coordinate files
+structures/solvated.gro
+structures/solvated_ions.gro
+
+# Proprietary/raw MOE project files
+*.moe
+*.mdb
+
+# Local reference/tutorial documents
+docs/*.pdf
