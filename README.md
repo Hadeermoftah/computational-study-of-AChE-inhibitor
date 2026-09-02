@@ -6,6 +6,15 @@ The study was designed to evaluate the dynamic behavior of a docking-derived 6F�
 
 ---
 
+## Key Findings
+
+- The **AChE protein remained comparatively structurally stable** during the 20 ns simulation, with the backbone RMSD stabilizing around **0.185 nm** during the final 10 ns.
+- Compound **6F underwent substantial reorientation** relative to its initial docking-derived pose, with a final heavy-atom RMSD of approximately **0.594 nm**.
+- Representative structures and close protein–ligand distances support **continued association of 6F with the general AChE binding region** in the analyzed trajectory rather than clear ligand dissociation.
+- The ligand reorientation was accompanied by **dynamic remodeling of the interaction network**, including reduced hydrogen bonding and heavy-atom contacts together with switching of aromatic interaction geometries involving residues such as **Trp86, Tyr341, and His447**.
+
+---
+
 ## Project Overview
 
 The computational workflow includes:
@@ -92,9 +101,9 @@ Relevant topology and index files are included in the repository.
 
 ---
 
-# Molecular Dynamics Analysis
+## Molecular Dynamics Analysis
 
-## 1. Protein Backbone Stability
+### 1. Protein Backbone Stability
 
 Protein backbone RMSD showed an initial structural adjustment followed by comparatively stable behavior during the latter part of the simulation.
 
@@ -109,7 +118,7 @@ These results indicate that the overall AChE backbone remained comparatively sta
 
 ---
 
-## 2. Protein Flexibility and Compactness
+### 2. Protein Flexibility and Compactness
 
 Cα RMSF analysis showed generally low residue-level fluctuations, with increased mobility primarily at terminal and selected flexible regions.
 
@@ -129,7 +138,7 @@ Together, the RMSF and Rg results support maintenance of the overall protein fol
 
 ---
 
-## 3. Ligand Heavy-Atom Dynamics
+### 3. Ligand Heavy-Atom Dynamics
 
 Ligand RMSD was calculated using the **31 heavy atoms of compound 6F**, excluding hydrogen atoms and the chlorine lone-pair virtual site.
 
@@ -154,7 +163,7 @@ Importantly, ligand RMSD alone does not distinguish reorientation within the bin
 
 ---
 
-## 4. Protein–Ligand Hydrogen Bonds
+### 4. Protein–Ligand Hydrogen Bonds
 
 The average number of protein–6F hydrogen bonds decreased during the trajectory.
 
@@ -173,7 +182,7 @@ This decrease should not, by itself, be interpreted as ligand dissociation becau
 
 ---
 
-## 5. Heavy-Atom Protein–Ligand Contacts
+### 5. Heavy-Atom Protein–Ligand Contacts
 
 Protein–ligand contacts were refined using ligand heavy atoms and protein non-hydrogen atoms.
 
@@ -192,7 +201,7 @@ The contact network therefore changed progressively during the simulation, while
 
 ---
 
-## 6. Representative Binding-Pose Evolution
+### 6. Representative Binding-Pose Evolution
 
 Representative structures were examined at **5, 8, 15, and 20 ns**.
 
@@ -204,7 +213,7 @@ Selected aromatic residues surrounding the ligand were examined to characterize 
 
 ---
 
-## 7. Aromatic Interaction Remodeling
+### 7. Aromatic Interaction Remodeling
 
 Because the AChE binding gorge contains several aromatic residues, trajectory-based geometric screening was used to investigate possible changes in aromatic interaction patterns.
 
@@ -240,7 +249,7 @@ results/tables/
 
 ---
 
-## 8. Short-Range Interaction Energy
+### 8. Short-Range Interaction Energy
 
 A trajectory rerun was used to calculate the direct short-range non-bonded interaction terms between AChE and compound 6F.
 
@@ -259,7 +268,7 @@ The interaction-energy analysis is therefore treated as a supporting descriptor 
 
 ---
 
-# Overall Interpretation
+## Overall Interpretation
 
 The 20 ns molecular dynamics simulation suggests that the AChE protein maintained overall structural stability, while compound 6F underwent substantial reorientation relative to its initial docking-derived pose.
 
