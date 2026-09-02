@@ -74,3 +74,4 @@ docs/*.pdf
 # Analysis trajectories and generated GROMACS defaults
 analysis/trajectory/
 mdout.mdp
+README_before_final_update.md
