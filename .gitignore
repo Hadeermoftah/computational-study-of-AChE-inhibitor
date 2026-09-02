@@ -66,3 +66,11 @@ structures/solvated_ions.gro
 
 # Local reference/tutorial documents
 docs/*.pdf
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Analysis trajectories and generated GROMACS defaults
+analysis/trajectory/
+mdout.mdp

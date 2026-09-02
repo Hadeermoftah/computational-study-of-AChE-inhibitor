@@ -1,0 +1,8 @@
+Metric,Key result,Interpretation
+Protein backbone RMSD,Final ~0.190 nm; final 10 ns relatively stable around ~0.185 nm,Protein backbone remained comparatively stable
+Protein Rg,Final half ~2.318 nm with small fluctuations,Overall protein compactness was maintained
+Ligand heavy-atom RMSD,Final ~0.594 nm; major pose transitions during trajectory,6F underwent substantial reorientation
+Protein–6F H-bonds,2.62 → 0.93 average H-bonds from first to last 5-ns window,Polar interaction network decreased over time
+Heavy-atom contacts,177.0 → 144.6 contacts from first to last 5-ns window,Packing/contact network was remodeled
+Heavy-atom minimum distance,0.270 → 0.300 nm from first to last 5-ns window,Ligand remained in close protein contact
+Direct SR interaction energy,-318.37 → -247.51 kJ/mol from first to last 5-ns window,"Short-range interaction regime changed, mainly electrostatically"

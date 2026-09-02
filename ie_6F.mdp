@@ -1,0 +1,58 @@
+title                   = AChE-6F interaction energy rerun
+
+; Run parameters
+integrator              = md
+nsteps                  = 10000000
+dt                      = 0.002
+
+; Output control
+nstenergy               = 5000
+nstlog                  = 5000
+nstxout-compressed      = 0
+
+; Protein-ligand energy groups
+energygrps              = Protein 6f_
+
+; Bond parameters
+continuation            = yes
+constraint_algorithm    = lincs
+constraints             = h-bonds
+lincs_iter              = 1
+lincs_order             = 4
+
+; Neighbor searching and van der Waals
+cutoff-scheme           = Verlet
+nstlist                 = 80
+rlist                   = 1.2
+vdwtype                 = cutoff
+vdw-modifier            = force-switch
+rvdw-switch             = 1.0
+rvdw                    = 1.2
+
+; Electrostatics
+coulombtype             = PME
+rcoulomb                = 1.2
+pme_order               = 4
+fourierspacing          = 0.16
+
+; Temperature coupling
+tcoupl                  = V-rescale
+tc-grps                 = Protein_6F Water_and_ions
+tau_t                   = 0.1 0.1
+ref_t                   = 300 300
+
+; Pressure coupling
+pcoupl                  = Parrinello-Rahman
+pcoupltype              = isotropic
+tau_p                   = 2.0
+ref_p                   = 1.0
+compressibility         = 4.5e-5
+
+; Periodic boundary conditions
+pbc                     = xyz
+
+; CHARMM36 dispersion treatment
+DispCorr                = no
+
+; Velocity generation
+gen_vel                 = no
