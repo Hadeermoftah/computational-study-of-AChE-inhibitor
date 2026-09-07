@@ -266,6 +266,8 @@ This quantity is **not a binding free energy**. In particular, it does not inclu
 
 The interaction-energy analysis is therefore treated as a supporting descriptor of changes in the protein–ligand interaction regime rather than as a direct prediction of experimental potency.
 
+![Protein–6F short-range interaction energy](results/figures/protein_6F_interaction_energy_final.png)
+
 ---
 
 ## Overall Interpretation
@@ -318,6 +320,33 @@ MD_6F/
 The Jupyter notebook documents the principal post-processing, statistical analysis, and visualization workflow used to generate the summarized MD results.
 
 Raw trajectories, checkpoint files, energy files, large generated system files, proprietary MOE files, temporary outputs, and local force-field distributions are intentionally excluded from version control through `.gitignore`.
+
+---
+## Reproducing the Analysis
+
+The principal post-processing and visualization workflow is documented in:
+
+```text
+MD_analysis_6F.ipynb
+```
+
+Python dependencies are listed in:
+
+```text
+requirements.txt
+```
+
+They can be installed with:
+
+```bash
+pip install -r requirements.txt
+```
+
+The notebook uses relative project paths and is intended to be run from the repository root.
+
+The repository includes processed analysis outputs, figures, tables, index files, simulation setup documentation, and representative structural files. Large production trajectories, checkpoint files, energy files, run-input files, and other large generated simulation files are intentionally excluded from version control.
+
+Accordingly, the public repository documents the analysis workflow and reported outputs, while complete re-execution of trajectory-dependent analyses requires the corresponding production trajectory files.
 
 ---
 
